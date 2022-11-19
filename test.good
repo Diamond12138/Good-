@@ -1,0 +1,18 @@
+// declare a variable
+var a
+var b
+
+// assign values to variables
+let a "10"
+let b a
+
+// print content to standard output
+print a
+print "\n"
+print b
+
+// a unknown command,will terminate program
+unknown
+
+// will not execute
+print "6"
