@@ -1,0 +1,44 @@
+-----var-----
+
+var [local] (name1) (name2) ...
+	Declare one or more variables,But you can't assign values to them.
+	Variables can be used globally or localized by adding "local".
+
+-----let-----
+
+let (variable) (variable)
+let (variable) (constant)
+	Only one variable can be assigned at a time.
+
+-----print-----
+
+print (anything)...
+	Can print anything except math/logic registers.
+
+println (anything)...
+	Print anything and wrap lines automatically.
+
+-----math/logic-----
+
+registers:
+	Can only be used in math/logical commands.
+	Because the mathematical expression is too complex, the split step operation is used.
+	All registers are 8-bit signed numbers.(signed long)
+	
+	ax : math/logical operation
+	bx : math/logical operation
+	cx : comparison results,will be used in conditional branch statements(if...elseif...else) and loop statements(while)
+		greater
+		gequal
+		equal
+		lequal
+		lesser
+	dx : difference between two numbers
+	n0x to n15x : prepare for math/logic operations.
+	tx : times register,will be used in a loop statement(for).
+
+mov (register) (anything)
+	Move anything into a register.
+
+mvo (variable) (register)
+	Move the value of a register into a variable.
